@@ -3,50 +3,34 @@ import React from 'react'
 const App = () => {
   return (
     <>
-      <section style={{ backgroundImage: 'url("/img/background.jpg")' }} className='flex flex-col  relative w-full h-screen bg-blend-overlay bg-black/60   bg-cover bg-no-repeat px-4 py-4 md:px-12'>
-        <nav className='grid grid-cols-2 items-center h-1/5 w-full  '>
-
+      <section style={{ backgroundImage: "url('/img/background.jpg')" }} className='flex flex-col bg-blend-overlay bg-blue-800/30 text-white h-screen py-2 px-4'>
+        <nav className='container mx-auto  w-full  h-1/5 flex items-center justify-between '>
           {/* logo  */}
-          <img className='block w-20 md:w-28' src="/img/logo.png" alt="" />
-          {/* menu big screen  */}
-          <ul className='hidden md:flex text-white justify-self-end space-x-3  text-base uppercase '>
-            <li className='hover:text-blue-700'  ><a href="#">Home</a></li>
-            <li className='hover:text-blue-700'  ><a href="#">about</a></li>
-            <li className='hover:text-blue-700'  ><a href="#">service</a></li>
-            <li className='hover:text-blue-700'  ><a href="#">portfolio</a></li>
-            <li className='hover:text-blue-700'  ><a href="#">contact</a></li>
+          <img className='w-28' src="/img/logo.png" alt="" />
+          {/* menu part  */}
+          <ul>
+            <li><a href=""></a>Home</li>
           </ul>
-          {/* hamberger icon  */}
-          <img className='z-10 inline md:hidden  justify-self-end  w-8' src="/img/hamburger.png" alt="" srcset="" />
-
-
-
-
         </nav>
-        {/* hamberger menu  */}
-        <ul className='hidden bg-slate-800 w-full px-4 py-8 absolute top-0 bottom-0 right-0 left-0 md:hidden text-white space-y-3 text-base uppercase '>
-          <li className='hover:text-blue-700' ><a href="">Home</a></li>
-          <li className='hover:text-blue-700' ><a href="">about</a></li>
-          <li className='hover:text-blue-700' ><a href="">service</a></li>
-          <li className='hover:text-blue-700' ><a href="">portfolio</a></li>
-          <li className='hover:text-blue-700' ><a href="">contact</a></li>
-        </ul>
+        {/* content part  */}
+        <div className='container mx-auto h-4/5 flex flex-col justify-center space-y-8   '>
+          <div className='text-center'>
+            <h1 className='text-2xl my-8'>
+              Lorem ipsum dolor sit.
+            </h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur neque, ducimus expedita, ipsa rem iusto quas non omnis sint modi deserunt? Officia eaque sapiente vero sunt reprehenderit possimus laudantium assumenda.
+            </p>
 
-        {/* content  */}
-        <div className='h-[80%] grid place-content-center flex-1'>
-
-          <div className='text-white  space-y-4'>
-            <p className=''>Lorem ipsum dolor sit amet.</p>
-            <h1> Tilte Lorem ipsum dolor sit amet consectetu</h1>
-            <p>description      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore doloremque fugit rem est, pariatur corporis harum beatae similique natus ipsa.</p>
           </div>
-          <button>Contact us</button>
-          <button>Portfolio</button>
-          <div>
-          </div>
+          <div className='flex justify-center'>
 
+            <button className='px-3 py-2 m-2 rounded bg-black text-blue-50'>contact us</button>
+            <button className='px-3 py-2 m-2 rounded bg-black text-blue-50'>contact us</button>
+          </div>
         </div>
       </section>
+
     </>
   )
 }
