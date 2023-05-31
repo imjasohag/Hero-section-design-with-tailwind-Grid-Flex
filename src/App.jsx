@@ -3,13 +3,13 @@ import React from 'react'
 const App = () => {
   return (
     <>
-      <section style={{ backgroundImage: 'url("/img/background.jpg")' }} className='flex flex-col  relative w-full h-screen bg-blend-overlay bg-black/60   bg-cover bg-no-repeat px-4 py-4 md:px-12'>
-        <nav className='grid grid-cols-2 items-center h-1/5 w-full  '>
+      <section style={{ backgroundImage: 'url("/img/background.jpg")' }} className='grid grid-cols-1 w-full min-h-screen bg-blend-overlay bg-black/60 bg-cover bg-no-repeat px-4 py-4 md:px-12'>
+        <nav className='flex justify-between items-center self-start'>
 
           {/* logo  */}
-          <img className='block w-20 md:w-28' src="/img/logo.png" alt="" />
+          <img className='h-20 md:h-28' src="/img/logo.png" alt="" />
           {/* menu big screen  */}
-          <ul className='hidden md:flex text-white justify-self-end space-x-3  text-base uppercase '>
+          <ul className='hidden md:flex text-white space-x-3  text-base uppercase '>
             <li className='hover:text-blue-700'  ><a href="#">Home</a></li>
             <li className='hover:text-blue-700'  ><a href="#">about</a></li>
             <li className='hover:text-blue-700'  ><a href="#">service</a></li>
@@ -33,19 +33,20 @@ const App = () => {
         </ul>
 
         {/* content  */}
-        <div className='h-[80%] grid place-content-center flex-1'>
+        <div className='flex flex-col text-center text-white '>
 
           <div className='text-white  space-y-4'>
-            <p className=''>Lorem ipsum dolor sit amet.</p>
-            <h1> Tilte Lorem ipsum dolor sit amet consectetu</h1>
+            <p className='font-medium text-xl'>Lorem ipsum dolor sit amet.</p>
+            <h1 className='font-bold text-5xl '> Tilte Lorem ipsum dolor sit amet consectetu</h1>
             <p>description      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore doloremque fugit rem est, pariatur corporis harum beatae similique natus ipsa.</p>
           </div>
-          <button>Contact us</button>
-          <button>Portfolio</button>
-          <div>
-          </div>
+          <div className='flex justify-center my-5'>
+            <button className='px-4 py-2 bg-emerald-700 rounded m-2'>Contact us</button>
+            <button className='px-4 py-2 bg-emerald-700 rounded m-2'>Portfolio</button>
+            
+            </div>
 
-        </div>
+          </div>
       </section>
     </>
   )
