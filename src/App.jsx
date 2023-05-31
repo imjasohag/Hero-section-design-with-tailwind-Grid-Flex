@@ -3,11 +3,11 @@ import React from 'react'
 const App = () => {
   return (
     <>
-      <section className='container bg-slate-500 mx-auto h-screen grid grid-cols-1 grid-rows-6'>
+      <section style={{ backgroundImage: 'url("/img/background.jpg")' }} className='mx-auto min-h-screen grid grid-cols-1 bg-black/50 bg-blend-overlay text-white px-12 py-4'>
         {/* nav part */}
-        <nav className='row  bg-blue-400 flex items-center justify-between '>
+        <nav className='flex justify-between self-start '>
           {/* logo */}
-          <img className='w-20' src="/img/logo.png" alt="" />
+          <img className='h-28' src="/img/logo.png" alt="" />
           {/* menu  */}
           <ul className='flex gap-3 items-center'>
             <li className=''><a href="">Home</a></li>
@@ -16,15 +16,19 @@ const App = () => {
           </ul>
         </nav>
         {/* content  */}
-        <div className=' bg-red-400'>
-          <div className='text-center'>
-            <p>Lorem, ipsum dolor.</p>
-            <h1>Lorem ipsum dolor sit.</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, aut!</p>
+        <div className=''>
+          <div className='text-center space-y-5'>
+            <p className='text-xl font-medium'>Lorem, ipsum dolor.</p>
+            <h1 className='text-5xl'>Lorem ipsum dolor sit.</h1>
+            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, aut!</p>
+            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, aut!</p>
+            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, aut!</p>
+            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, aut!</p>
+            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, aut!</p>
           </div>
-          <div className='flex justify-center items-center'>
-            <button>contact us</button>
-            <button>contact us</button>
+          <div className='flex justify-center items-center my-8'>
+            <button className='px-4 py-2 bg-teal-400 rounded m-2'>contact us</button>
+            <button className='px-4 py-2 bg-teal-400 rounded m-2'>contact us</button>
           </div>
         </div>
       </section>
